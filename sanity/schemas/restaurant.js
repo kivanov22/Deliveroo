@@ -47,7 +47,7 @@ export default {
       title:"Category",
       validation: (Rule) =>Rule.required(),
       type:"reference",
-      to:[{type: "category"}],
+      to: [{type: "category"}],
     },
     {
       name:"dishes",
