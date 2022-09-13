@@ -10,7 +10,7 @@ const client = sanityClient({
 });
 
 const builder = imageUrlBuilder(client);
-export const urlFor = (source) =>builder.image(source);
+export const urlFor = (source) => builder.image(source);
 
 //RUN THIS to add exception for localhost 3000 CORS Policy
 //sanity cors add https://localhost:3000 //19006

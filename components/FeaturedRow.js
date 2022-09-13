@@ -13,7 +13,7 @@ const FeaturedRow = ({ id, title, description }) => {
         `
     *[_type == "featured" && _id == $id] {
       ...,
-      restaurants[]=>{
+      restaurants[]->{
         ...,
         dishes[]->,
         type->{
@@ -27,8 +27,9 @@ const FeaturedRow = ({ id, title, description }) => {
       .then((data) => {
         setRestaurants(data?.restaurants);
       });
-  }, []);
+  }, [id]);
 
+  // console.log(restaurants.image)
 
   return (
     <View>
