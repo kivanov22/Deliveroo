@@ -3,7 +3,7 @@ import React, { useMemo, useState } from "react";
 import { useNavigation } from "@react-navigation/native";
 import { useDispatch, useSelector } from "react-redux";
 import { selectRestaurant } from "../features/restaurantSlice.js";
-import { selectBasketItems } from "../features/basketSlice.js";
+import { removeFromBasket, selectBasketItems, selectBasketTotal } from "../features/basketSlice.js";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { XCircleIcon } from "react-native-heroicons/solid";
 import { urlFor } from "../sanity.js";
@@ -12,12 +12,13 @@ const BasketScreen = () => {
   const navigation = useNavigation();
   const restaurant = useSelector(selectRestaurant);
   const items = useSelector(selectBasketItems);
+  const basketTotal = useSelector(selectBasketTotal);
   const [groupedItemsInBasket, setGroupedItemsInBasket] = useState([]);
   const dispatch = useDispatch();
 
   useMemo(() => {
     const groupedItems = items.reduce((results,item) => {
-      (results[items.id] = results[items.id] || []).push(item);//if key exists 
+      (results[item.id] = results[item.id] || []).push(item);//if key exists it will store many of the same products
       return results;
     }, {});
 
@@ -51,18 +52,57 @@ const BasketScreen = () => {
           </TouchableOpacity>
         </View>
 
-        <ScrollView>
+        <ScrollView className="divide-y divide-gray-200">
           {Object.entries(groupedItemsInBasket).map(([key,items]) =>(
-            <View key={key}>
-              <Text>{items.length} x</Text>
+            <View key={key} className="flex-row items-center space-x-3 bg-white py-2 px-5">
+              <Text className="text-[#00CCBB]">{items.length} x</Text>
               <Image 
               source={{uri: urlFor(items[0]?.image).url()}}
               className="h-12 w-12 rounded-full"
               />
               <Text className="flex-1">{items[0]?.name}</Text>
+
+              <Text className="text-gray-600">
+                <Text>{items[0]?.price}</Text>
+              </Text>
+
+              <TouchableOpacity>
+                <Text 
+                onPress={()=>dispatch(removeFromBasket({id:key}))}
+                className="text-[#00CCBB] text-xs">
+                  Remove
+                </Text>
+              </TouchableOpacity>
             </View>
           ))}
         </ScrollView>
+
+        <View className="p-5 bg-white mt-5 space-y-4">
+          <View className="flex-row justify-between">
+            <Text className="text-gray-400">Subtotal</Text>
+            <Text className="text-gray-400">$
+              <Text>{basketTotal}</Text>
+            </Text>
+          </View>
+
+          <View className="flex-row justify-between">
+            <Text className="text-gray-400">Delivery Fee</Text>
+            <Text className="text-gray-400">$
+              <Text>{3.99}</Text>
+            </Text>
+          </View>
+
+          <View className="flex-row justify-between">
+            <Text className="text-black">Order Total</Text>
+            <Text className="font-extrabold">$
+              <Text>{basketTotal + 3.99}</Text>
+            </Text>
+          </View>
+
+          <TouchableOpacity className="rounded-lg bg-[#00CCBB] p-4">
+            <Text className="text-center text-white text-lg font-bold">Place Order</Text>
+          </TouchableOpacity>
+        </View>
       </View>
     </SafeAreaView>
   );
