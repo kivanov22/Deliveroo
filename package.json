@@ -26,7 +26,8 @@
     "react-native-svg": "^9.13.3",
     "react-native-webview": "^11.23.1",
     "react-redux": "^8.0.2",
-    "tailwindcss-react-native": "^1.7.10"
+    "tailwindcss-react-native": "^1.7.10",
+    "react-native-maps": "0.31.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
