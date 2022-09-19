@@ -49,7 +49,11 @@ Here is some project screenshots ..
 
 ## Key Features
 
-- 
+- Make an order of desired food from a local restaurant.
+- Check the products you added to your basket 
+- Add/Remove items from basket
+- Loading screen animation of delivering
+- Popup modal of basket total price and quantity
 
 
 ---
