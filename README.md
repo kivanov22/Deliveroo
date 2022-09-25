@@ -27,16 +27,13 @@
   <!-- <a href="#license">License</a> -->
 </p>
 
-## Demo
-
-
 ---
 
 ## Project Screenshots
 
 Here is some project screenshots ..
 
-![](https://github.com/kivanov22/Deliveroo/blob/main/AppScreenshots/Restaurant-Screen.jpg)
+![](https://github.com/kivanov22/Deliveroo/blob/AppScreenshots/Restaurant-Screen.jpg)
 ---
 
 ![BasketScreenOne Screenshot](assets/AppScreenshots/Basket-Screen.jpg?raw=true "Basket Page")
