@@ -11,17 +11,10 @@
    Deliveroo created with React Native.
 </h4>
 
-<!-- after deploy -->
-<!-- <p align="center">
-   <img src="https://car-dealership-app-67302.web.app" alt="Release" />
-   <img src="https://car-dealership-app-67302.web.app" alt="Deployment" />
-   <img src="https://img.shields.io/github/license/kivanov22/" alt="License" />
-</p> -->
 
 <p align="center">
-  <!-- <a href="#demo">Demo</a> • -->
-  <!-- <a href="#project-screenshots">Project Screenshots</a> • -->
-  <!-- <a href="#key-features">Key Features</a> • -->
+  <a href="#project-screenshots">Project Screenshots</a> •
+  <a href="#key-features">Key Features</a> •
   <a href="#key-technologies">Key Technologies</a> •
   <a href="#setup">Setup</a> •
   <!-- <a href="#license">License</a> -->
@@ -37,7 +30,7 @@ Here is some project screenshots ..
 ![](https://github.com/kivanov22/Deliveroo/blob/main/App-Screenshots/deliveroo-gif.gif)
 ---
 
-![BasketScreenOne Screenshot](assets/AppScreenshots/Basket-Screen.jpg?raw=true "Basket Page")
+<!-- ![BasketScreenOne Screenshot](assets/AppScreenshots/Basket-Screen.jpg?raw=true "Basket Page")
 
 ---
 
@@ -57,9 +50,9 @@ Here is some project screenshots ..
 
 ---
 
-![OrderScreen-Finish Screenshot](assets/AppScreenshots/Finish-Order-Screen.jpg?raw=true "Order Page")
+![OrderScreen-Finish Screenshot](assets/AppScreenshots/Finish-Order-Screen.jpg?raw=true "Order Page") -->
 
----
+<!-- --- -->
 
 
 ## Project Architecture
