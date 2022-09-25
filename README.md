@@ -36,7 +36,7 @@
 
 Here is some project screenshots ..
 <!-- ![RestaurantScreen Screenshot](assets/AppScreenshots/Restaurant-Screen.jpg?raw=true "Restaurant Page") -->
-![](https://github.com/kivanov22/Deliveroo/blob/main/assets/AppScreenshots/Restaurant-Screen.jpg)
+![](https://github.com/kivanov22/Deliveroo/blob/assets/AppScreenshots/Restaurant-Screen.jpg)
 ---
 
 ![BasketScreenOne Screenshot](assets/AppScreenshots/Basket-Screen.jpg?raw=true "Basket Page")
