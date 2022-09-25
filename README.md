@@ -33,7 +33,7 @@
 
 Here is some project screenshots ..
 
-![](https://github.com/kivanov22/Deliveroo/blob/AppScreenshots/Restaurant-Screen.jpg)
+![](https://github.com/kivanov22/Deliveroo/blob/main/App Screenshots/Restaurant-Screen.jpg)
 ---
 
 ![BasketScreenOne Screenshot](assets/AppScreenshots/Basket-Screen.jpg?raw=true "Basket Page")
@@ -63,8 +63,11 @@ Here is some project screenshots ..
 
 ## Project Architecture
   -Components folder for the components.
+  <br>
   -Features folder for the slices.
+  <br>
   -Sanity folder containing the schemas of the back-end
+  <br>
   -Screens folder containing the screens
   
 -
