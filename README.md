@@ -27,11 +27,9 @@
 Here is some project screenshots ..
 
 <!-- ![](https://github.com/kivanov22/Deliveroo/blob/main/App-Screenshots/Restaurant-Screen.jpg) -->
-<div align="center">
 ![](https://github.com/kivanov22/Deliveroo/blob/main/App-Screenshots/deliveroo-gif.gif)
 
 ---
-</div>
 
 <!-- ![BasketScreenOne Screenshot](assets/AppScreenshots/Basket-Screen.jpg?raw=true "Basket Page")
 
