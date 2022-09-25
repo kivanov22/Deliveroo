@@ -57,17 +57,12 @@ Here is some project screenshots ..
 
 
 ## Project Architecture
-  -Components folder for the components.
-  <br>
-  -Features folder for the slices.
-  <br>
-  -Sanity folder containing the schemas of the back-end
-  <br>
-  -Screens folder containing the screens
+
+  - Components folder for the components.
+  - Features folder for the slices.
+  - Sanity folder containing the schemas of the back-end
+  - Screens folder containing the screens
   
-
-<br>
-
 
 ---
 
