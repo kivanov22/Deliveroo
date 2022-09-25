@@ -35,12 +35,41 @@
 ## Project Screenshots
 
 Here is some project screenshots ..
-
+![RestaurantScreen Screenshot](assets/AppScreenshots/Restaurant-Screen.jpg?raw=true "Restaurant Page")
 
 ---
 
-## Project Architecture
+![BasketScreenOne Screenshot](assets/AppScreenshots/Basket-Screen.jpg?raw=true "Basket Page")
 
+---
+
+![BasketScreenTwo Screenshot](assets/AppScreenshots/Basket-Screen-2.jpg?raw=true "Basket Page")
+
+---
+
+![BasketScreenThree Screenshot](assets/AppScreenshots/Basket-Screen-3.jpg?raw=true "Basket Page")
+
+---
+
+![OrderScreen-Loading Screenshot](assets/AppScreenshots/Order-Screen-Loading.jpg?raw=true "Order Page")
+
+---
+
+![OrderScreen-Complete Screenshot](assets/AppScreenshots/Order-Complete-Screen.jpg?raw=true "Order Page")
+
+---
+
+![OrderScreen-Finish Screenshot](assets/AppScreenshots/Finish-Order-Screen.jpg?raw=true "Order Page")
+
+---
+
+
+## Project Architecture
+  -Components folder for the components.
+  -Features folder for the slices.
+  -Sanity folder containing the schemas of the back-end
+  -Screens folder containing the screens
+  
 -
 <br>
 
